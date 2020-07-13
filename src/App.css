@@ -1,11 +1,33 @@
-
-
-.card a {
+.links a {
+  background:inherit;
+  color: inherit;
   text-decoration: none;
-  background: #fff;
   border: none;
-  padding:0;
-  margin:0;
+  margin: 0;
+  padding: 0;
+}
+
+.links a:visited {
+  background: #fff;
+  color: #777;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+}
+
+.links a:hover {
+  background: #fff;
+  color: #777;
+  text-decoration: none;
+  margin: 0;
+}
+
+.links a:active {
+  background: #fff;
+  background-color: #fff;
+  color: #777;
+  text-decoration: none;
+  margin: 0;
 }
 
 .App {
@@ -42,6 +64,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -113,15 +136,7 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 25%; */
 }
-
-/* .img {
-  width: 100%;
-  height: auto;
-} */
-
-
 
 /* FEATURE */
 
@@ -160,7 +175,7 @@ h1 {
 
 .feature-title h2 {
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   padding-top: 10px;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -214,8 +229,18 @@ h1 {
 }
 
 .feature-box h3,li {
-  color: #777;
+  color: #fff;
 }
+
+.feature-box h3 {
+  font-weight: 500;
+}
+
+.feature-box li {
+  font-weight: 300;
+}
+
+
 
 .icon-basic-webpage:before {
   content: "\e024";
@@ -244,9 +269,9 @@ footer {
 /* MOBILE */
 
 .mobile-container {
-  width:100%;
-  padding:8px;
-  min-height:200px;
+  width: 100%;
+  padding: 8px;
+  min-height: 200px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/HorseGuards.jpg");
   background-size: cover;
   background-position: 0 50%;
@@ -255,9 +280,9 @@ footer {
 .mobile-image-container {
   background-color: transparent;
   position: absolute;
-  width:25%;
-  height:220px;
-  left:60%;
+  width: 25%;
+  height: 220px;
+  left: 60%;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/p01lc36f.jpg");
   background-size: cover;
