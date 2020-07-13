@@ -1,7 +1,7 @@
 
 
 export const articles = [
-  { id: '001', title: 'First article', detail: 'This is some detail' },
+  { id: '001', title: 'First article', detail: 'This is some detail', link: 'article'},
   { id: '002', title: 'Second article', detail: 'This is some detail' },
   { id: '002', title: 'Third article', detail: 'This is some detail' },
   { id: '003', title: 'Fourth article', detail: 'This is some detail' },
