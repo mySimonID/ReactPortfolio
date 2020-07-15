@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ArticleCard(props) {
 
@@ -7,16 +8,16 @@ function ArticleCard(props) {
   return (
     <div className="col-6 col-sm-6 col-lg-3">
       <div className="card article-card-area links">
-      <a href={article.link} class="btn btn-primary">
-        <img className="card-img-top" src="img/img_avatar3.png" alt="article" />
-        <div className="card-body">
-          <h5 className="card-title">{article.title}</h5>
-          <p className="card-text">{article.detail}</p>
-          
-        </div>
-        </a>
+        <Link className="btn btn-primary" to={{ pathname: '/article', article: article }}>
+          <img className="card-img-top" src="img/img_avatar3.png" alt="article" />
+          <div className="card-body">
+            <h5 className="card-title">{article.title}</h5>
+            <p className="card-text">{article.detail}</p>
+
+          </div>
+        </Link>
       </div>
-      
+
     </div>
   )
 }

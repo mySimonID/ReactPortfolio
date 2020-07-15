@@ -103,7 +103,7 @@ body {
 
 h1 {
   /* margin-left: 8px; */
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 
@@ -123,12 +123,13 @@ h1 {
 }
 
 .jumbotron {
-  /* background-image: url("../img/HorseGuards.jpg"); */
+  background-image: url("/img/HorseGuards.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/HorseGuards.jpg");
   background-size: cover;
   background-position: 0 50%;
   color: white;
   max-height: 75%;
+  margin-bottom: 0;
 }
 
 .jumbo-img {
@@ -286,6 +287,27 @@ footer {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/p01lc36f.jpg");
   background-size: cover;
+}
+
+/* ARTICLE PAGE */
+
+.article-page {
+  width:80%;
+  background: #fff;
+  padding:8px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.article-page h1 {
+  color: #777;
+  font-size: 2.1em;
+  margin-bottom:10px;
+}
+
+.article-page p {
+  color: #777;
+  font-size: 1.1em;
 }
 
 /* ARTICLE CARDS */

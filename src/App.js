@@ -12,14 +12,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-
-          <h1 class="display-4">Simon Joyce</h1>
-          <h2 class="lead">project manager / software engineer - portfolio</h2>
-        </div>
-      </div>
-
       <div class="body-container">
         <h1 class="heading">Title</h1>
         <h1 class="sub-text">This is a title</h1>

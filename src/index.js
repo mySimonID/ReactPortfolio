@@ -4,15 +4,19 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import Article from './components/Article'
+import Heading from './components/Heading'
+import AppNavbar from './components/AppNavbar'
+import ArticlePage from './components/ArticlePage'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-  <BrowserRouter>
+    <Heading />
+    <BrowserRouter>
+      <AppNavbar />
       <Switch >
         <Route exact path='/' component={App} />
-        <Route path='/article' component={Article} />
+        <Route path='/article/' component={ArticlePage} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
