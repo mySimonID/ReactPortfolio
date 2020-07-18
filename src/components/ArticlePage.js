@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import { getArticle } from '../data/Content'
 
+import ArticleReader from './ArticleReader'
+
 class ArticlePage extends Component {
 
   constructor(props) {
@@ -12,16 +14,23 @@ class ArticlePage extends Component {
     }
   }
 
-  componentWillMount = () => {
+  componentDidMount = () => {
 
     const article = getArticle(this.state.id);
 
     this.setState({
-      article:article
+      article: article
     })
   }
 
   render() {
+
+    console.log(">>>" + this.state.article.file );
+    var fileName = this.state.article.file ? this.state.article.file : "unknown.txt"
+
+    fileName = "../content/" + fileName;
+    console.log(fileName);
+
     return (
       <div className="col-12 col-sm-12 col-lg-10">
 
@@ -29,6 +38,7 @@ class ArticlePage extends Component {
 
           <h1>{this.state.article.title}</h1>
           <p>{this.state.article.detail}</p>
+          <ArticleReader txt={fileName} />
         </div>
 
       </div>

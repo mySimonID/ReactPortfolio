@@ -1,22 +1,16 @@
 import React from 'react';
 
-import ArticleCard from './components/ArticleCard'
+
 import SkillsCard from './components/SkillsCard'
 
-import {articles, skills} from './data/Content'
+import { skills} from './data/Content'
 
 import './App.css';
-
-
 
 function App() {
   return (
     <div className="App">
-      <div class="body-container">
-        <h1 class="heading">Title</h1>
-        <h1 class="sub-text">This is a title</h1>
-      </div>
-
+    
       <section>
         <div class="feature-row">
           <div class="feature-container">
