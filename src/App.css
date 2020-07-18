@@ -109,8 +109,6 @@ h1 {
   font-size: 1.6rem;
 }
 
-
-
 .heading {
   font-weight: 700;
   text-transform: uppercase;
@@ -305,13 +303,43 @@ footer {
 
 .article-page h1 {
   color: #777;
+  font-weight: 700;
   font-size: 2.1em;
+  margin-bottom: 10px;
+}
+
+.article-page h2 {
+  color: #777;
+  font-weight: 500;
+  font-size: 1.9em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.article-page h3 {
+  color: #777;
+  font-weight: 400;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .article-page p {
   color: #777;
   font-size: 1.1em;
+  margin-bottom:12px;
+  line-height: 1.7em;
+}
+
+.code {
+  color: #777;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+  line-height: 1.0em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding:0;
+  text-align: unset;
+  white-space: pre;
 }
 
 .article-page img {

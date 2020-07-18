@@ -9,7 +9,7 @@ class ArticleReader extends React.Component {
   }
 
   componentDidMount = () => {
-    
+
   }
 
   componentWillReceiveProps = (prevState) => {
@@ -66,6 +66,8 @@ class ArticleReader extends React.Component {
         return (<h3 key={key}>{text}</h3>)
       case 'P':
         return (<p key={key}>{text}</p>)
+      case 'C':
+        return (<span className="code" key={key}>{text}</span>)
       case 'I':
         const src = "../img/" + text.trim();
         return (<img src={src} alt="image" />)

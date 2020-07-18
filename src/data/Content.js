@@ -1,7 +1,7 @@
 
 
 export const articles = [
-  { id: '001', skillid:'001', title: 'First article', detail: 'This is some detail', file: 'article001.txt'},
+  { id: '001', skillid:'001', title: 'ToDo List Server', detail: 'RESTful API TODO list server using NodeJS', file: 'article001.txt'},
   { id: '002', skillid:'001', title: 'Second article', detail: 'This is some detail', file:'article002.txt'},
   { id: '003', skillid:'002', title: 'Third article', detail: 'This is some detail', file:'' },
   { id: '004', skillid:'002', title: 'Fourth article', detail: 'This is some detail', file:'' },
