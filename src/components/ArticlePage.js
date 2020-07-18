@@ -1,23 +1,39 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function ArticlePage(props) {
+import { getArticle } from '../data/Content'
 
-  console.log(props);
+class ArticlePage extends Component {
 
-  // var {article} = props.location;
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: props.match.params.id,
+      article: []
+    }
+  }
 
-  var article = { id: '001', title: 'First article', detail: 'This is some detail', link: 'article' };
+  componentWillMount = () => {
 
-  return (
-    <div className="col-12 col-sm-12 col-lg-10">
-      <div className="article-page">
+    const article = getArticle(this.state.id);
 
-        <h1>{article.title}</h1>
-        <p>{article.detail}</p>
+    this.setState({
+      article:article
+    })
+  }
+
+  render() {
+    return (
+      <div className="col-12 col-sm-12 col-lg-10">
+
+        <div className="article-page">
+
+          <h1>{this.state.article.title}</h1>
+          <p>{this.state.article.detail}</p>
+        </div>
 
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default ArticlePage;

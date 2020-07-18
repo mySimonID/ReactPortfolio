@@ -6,7 +6,7 @@ function SkillsCard(props) {
 
   return (
     <div className="col-6 col-md-6 col-lg-3 links">
-      <a href='article' alt='skills'>
+      <a href={`skill/${skill.id}`} alt='skills'>
         <div className="feature-box">
           <i className="material-icons feature-box__icon">{skill.icon}</i>
           <h3 className="feature-box-heading u-margin-bottom-small">{skill.title}</h3>

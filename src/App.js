@@ -17,15 +17,6 @@ function App() {
         <h1 class="sub-text">This is a title</h1>
       </div>
 
-      <div className="row">
-        {articles.map(article => {
-          return (
-            <ArticleCard article={article} />
-          )
-        })}
-
-      </div>
-
       <section>
         <div class="feature-row">
           <div class="feature-container">

@@ -6,7 +6,8 @@ import './index.css';
 import App from './App';
 import Heading from './components/Heading'
 import AppNavbar from './components/AppNavbar'
-import ArticlePage from './components/ArticlePage'
+import ArticlesPage from './components/ArticlePage'
+import SkillsPage from './components/SkillPage'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -16,7 +17,8 @@ ReactDOM.render(
       <AppNavbar />
       <Switch >
         <Route exact path='/' component={App} />
-        <Route path='/article/' component={ArticlePage} />
+        <Route path='/skill/:id' component={SkillsPage} />
+        <Route path='/article/:id' component={ArticlesPage} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

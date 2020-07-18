@@ -6,11 +6,10 @@ const Heading = () => {
 
   return (
 
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-
-          <h1 class="display-4">Simon Joyce</h1>
-          <h2 class="lead">project manager / software engineer - portfolio</h2>
+      <div className="jumbotron jumbotron-fluid">
+        <div className="container">
+          <h1 className="display-4">Simon Joyce</h1>
+          <h2 className="lead">project manager / software engineer - portfolio</h2>
         </div>
       </div>
 
