@@ -41,10 +41,7 @@ class SkillsPage extends Component {
         <div className="article-page">
 
           <h1>{this.state.skill.title}</h1>
-         
-
-
-
+      
           <div>
             {this.state.articles.length > 0 ?
               <div className="row">

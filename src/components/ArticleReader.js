@@ -9,7 +9,7 @@ class ArticleReader extends React.Component {
   }
 
   componentDidMount = () => {
-
+    // this.readTextFile(this.props.txt);
   }
 
   componentWillReceiveProps = (prevState) => {
@@ -54,8 +54,29 @@ class ArticleReader extends React.Component {
     return text;
   }
 
+  getLinkName = (row) => {
+    const pos = row.indexOf("]");
+    var text = row;
+    if (pos > 0) {
+      text = row.slice(1, pos);
+    }
+    return text;
+  }
+
+  getLink = (row) => {
+    const pos = row.indexOf("]");
+    var text = row;
+    if (pos > 0) {
+      text = row.slice(pos + 2); // take into account the (
+      text = text.slice(0, text.length - 1);
+    }
+    return text;
+  }
+
   renderText = (key, prefix, text) => {
     switch (prefix.toUpperCase()) {
+      case 'B': // Blank Row
+        return (<div>{'\u00A0'}</div>)
       case 'NF':
         return (<div key={key}>{text}</div>)
       case 'H1':
@@ -71,6 +92,12 @@ class ArticleReader extends React.Component {
       case 'I':
         const src = "../img/" + text.trim();
         return (<img src={src} alt="image" />)
+      case 'L':
+        const name = this.getLinkName(text);
+        const link = this.getLink(text);
+        return (<a className="normal-a" rel="noopener noreferrer" target='_blank' href={link}>{name}</a>)
+      case '*':
+        return <span className='bullet'>{text}<br /></span>
       default:
         return <span key={key}>{text}<br /></span>
     }

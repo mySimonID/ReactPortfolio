@@ -6,8 +6,8 @@ function ArticleCard(props) {
   const { article } = props;
 
   return (
-    <div className="col-6 col-sm-6 col-lg-3">
-      <div className="card article-card-area links">
+    <div className="col-6 col-sm-6 col-lg-6">
+      <div className="card shadow">
         <Link  to={{ pathname: '/article/' + article.id, article: article }}>
           <img className="card-img-top" src="/img/img_avatar3.png" alt="article" />
           <div className="card-body">

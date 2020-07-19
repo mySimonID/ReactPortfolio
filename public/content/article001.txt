@@ -1,12 +1,46 @@
-p:The server provides several API including Get (return all ToDo items), Create, Delete and Update.
-p:The API can then used by a number of projects as a consistent interface.
 h2: Overview
-p:The Api uses nodeJs and an express based server.
-h2: Installing
-p:This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, 
-H3: Deploying to docker
-p: 
-c: This is code
-c:    Tdsds
-c:    Tsdsfs
-c: Tsfsf
+p:
+p: The server provides a REST interface to manage the database as follows:
+
+*:  get('/')              - return all todo items
+*:  post('/new')          - add a single todo to the DB
+*:  post('/delete/:id')    - Delete an item from the DB
+*:  post('/save/:id')      - Save (update) an existing item to the DB
+*:  get('/version')       - return version of this code
+
+h2:Mongodb Set-up
+
+p:The project depends on the creation of an online Mongodb using https://cloud.mongodb.com.
+p:Creating an initial online mongodb is free to get you started.
+p:Once you have created the mongodb, then change the file db/DBConfig.js in this repository to use your connect string.
+b:
+c: module.exports = {	
+c:  db: 'mongodb+srv://put the connection string to your mongodb here'	
+c: };
+b:
+p:I have then deployed the project as a Docker instance on my local machin using port number 49160. Refer to the 'DockerFile' to see how to configure and start the Docker image.
+
+h2:Server implementation
+p:The server has been used in four example projects:
+
+l:[nodejs](https://github.com/mySimonID/NodeJSToDoList)
+l:[React](https://github.com/mySimonID/ReactToDoList)
+l:[React Native](https://github.com/mySimonID/ReactNativeToDoList)
+l:[Xamarin](https://github.com/mySimonID/XamarinToDoList)
+p:
+p:Follow the individual links to each project to see how the server has been used.
+
+h3: Deploying to docker
+
+h2: Future enhancements
+*:Implement authentication
+*:Implement auto-synch
+
+h2: License
+l:[MIT](https://choosealicense.com/licenses/mit/)
+b:
+b:
+b:
+
+
+
