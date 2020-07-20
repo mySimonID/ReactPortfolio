@@ -32,7 +32,7 @@ class ArticlePage extends Component {
     console.log(fileName);
 
     return (
-      <div className="col-12 col-sm-12 col-lg-10">
+      <div className="col-12 col-sm-12 col-lg-12">
 
         <div className="article-page">
 

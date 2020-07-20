@@ -2,8 +2,8 @@
 
 export const articles = [
   { id: '001', skillid:'001', title: 'ToDo List Server', detail: 'A RESTful API ToDo list server using NodeJS/Express', file: 'article001.txt'},
-  { id: '002', skillid:'001', title: 'Second article', detail: 'This is some detail', file:'article002.txt'},
-  { id: '003', skillid:'002', title: 'Third article', detail: 'This is some detail', file:'' },
+  { id: '002', skillid:'001', title: 'Calculator', detail: 'Calculator written using React', file:'article002.txt'},
+  { id: '003', skillid:'001', title: 'Third article', detail: 'This is some detail', file:'' },
   { id: '004', skillid:'002', title: 'Fourth article', detail: 'This is some detail', file:'' },
   { id: '005', skillid:'003', title: 'Fifth article', detail: 'This is some detail', file:'' },
   { id: '006', skillid:'004', title: 'Sixth article', detail: 'This is some detail', file:''},

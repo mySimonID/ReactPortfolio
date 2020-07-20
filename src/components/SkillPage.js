@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { getSkill, getArticlesForSkill } from '../data/Content'
-import ArticleCard from './ArticleCard'
+import ArticleCard from './ArticleCard2'
 
 class SkillsPage extends Component {
 
@@ -36,11 +36,11 @@ class SkillsPage extends Component {
   render() {
 
     return (
-      <div className="col-12 col-sm-12 col-lg-10">
+      <div className="col-12 col-sm-12 col-lg-12">
 
         <div className="article-page">
 
-          <h1>{this.state.skill.title}</h1>
+          <h1>{this.state.skill.title} projects</h1>
       
           <div>
             {this.state.articles.length > 0 ?

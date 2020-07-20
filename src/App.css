@@ -175,7 +175,8 @@ h1 {
   text-align: center;
 }
 
-.feature-box {
+/* SKILLS */
+.skills-card {
   background: transparent;
   border-radius: 12px;
   border: 1px solid white;
@@ -196,13 +197,13 @@ h1 {
   transition-delay: 0s;
 }
 
-.feature-box:hover {
+.skills-card:hover {
   transform: translateY(-1.5rem) scale(1.03)
 }
 
-.feature-box__icon {
+.skills-card-icon {
   font-size: 6rem;
-  margin-bottom: 01.5rem;
+  margin-bottom: 1.5rem;
   background-image: linear-gradient(to right, #64495E, #4C5F9A);
   background-clip: text;
   -webkit-background-clip: text;
@@ -213,25 +214,25 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.feature-box * {
+.skills-card * {
   list-style: none;
 }
 
-.feature-box h3,
+.skills-card h3,
 li {
   color: #fff;
 }
 
-.feature-box h3 {
+.skills-card  h3 {
   font-weight: 500;
 }
 
-.feature-box li {
+.skills-card li {
   font-weight: 300;
 }
 
 
-
+/*  */
 .icon-basic-webpage:before {
   content: "\e024";
 }
@@ -280,13 +281,15 @@ footer {
   width: 90%;
   background: #fff;
   padding: 8px;
+  margin-top:20px;
   margin-left: auto;
   margin-right: auto;
+  padding:30px;
 }
 
 .article-page h1 {
   /* color: #777; */
-  font-weight: 350;
+  font-weight: 400;
   font-size: 2.1em;
   margin-bottom: 10px;
 }
@@ -335,7 +338,10 @@ footer {
 }
 
 /* ARTICLE CARDS */
-.article-card-area {
+
+.article-card {
+  border-top: 4px solid #800080;
+  padding:10px;
   margin: 8px;
 }
 

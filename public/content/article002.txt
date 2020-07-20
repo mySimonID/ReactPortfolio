@@ -1,5 +1,9 @@
-H2:This is the second article
-H2:Second Row
-H3:Third Row
-p: This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, This is a long paragraph, 
-i: HorseGuards.jpg
+l:[github](https://github.com/mySimonID/Calculator)
+l:[demo](https://mysimonid.github.io/Calculator/)
+H2:Overview
+p:This is a simple calculator written using React and demonstrates a number of key concepts in React.
+p: Use of Components, Classes and Functions to create consistent layouts.
+b:
+i: ReactCalculator.png
+b:
+
