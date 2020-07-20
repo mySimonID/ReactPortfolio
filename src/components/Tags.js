@@ -1,14 +1,15 @@
 import React from 'react'
+import TagItem from './TagItem'
 
 function tags(props) {
 
   const { tagList } = props;
 
   return (
-    <div>
-      {tagList.map(tag => {
+    <div className="row tagRow">
+      {tagList.split(',').map(tag => {
         return(
-          {tag}
+          <div><TagItem tag={tag} /></div>
         )
       })}
     </div>

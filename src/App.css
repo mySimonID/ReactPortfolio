@@ -464,3 +464,17 @@ footer {
   margin-right:auto;
   margin-left:auto;
 }
+
+.tag {
+  background: rgb(140, 140, 236);
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 8px;
+}
+
+.tagRow {
+  margin-left:0
+}

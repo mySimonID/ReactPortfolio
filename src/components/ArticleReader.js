@@ -1,4 +1,5 @@
 import React from 'react'
+import Tags from './Tags'
 
 class ArticleReader extends React.Component {
   constructor(props) {
@@ -122,7 +123,8 @@ class ArticleReader extends React.Component {
         const name = this.getLinkName(text);
         const link = this.getLink(text);
         return (<a className="normal-a" rel="noopener noreferrer" target='_blank' href={link}>{name}</a>)
-
+      case 'T':
+        return (<Tags tagList={text} />);
       case '*':
         return <span className='bullet'>{text}<br /></span>
       default:

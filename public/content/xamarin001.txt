@@ -1,13 +1,30 @@
+t:Xamarin, REST
 h2:Overview
-p:The ToDo list runs as an Android implementation, using the ToDo List server (see references)
-p: A REST API is used to access the ToDo List server
+p:The ToDo list runs as an Android implementation using the ToDo List server (see references)
+p:A REST API is used to access the ToDo List server(the Server)
 
 rs:
-i1:xamarinToDo001.png
-i3:xamarinToDo001.png, xamarinToDo001.png, xamarinToDo001.png
+i2:xamarinToDo001.png, xamarinToDo002.png
 re:
 
+h2:Technical
+p:The code uses the HttpClient component to make API calls to the Server.
+p:For example, the following returns all of the ToDo items.
+
+c:string jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(item);
+c:
+c:        var httpContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+c:
+c:        Uri uri = new Uri(string.Format(webService + "/new", string.Empty));
+c:
+c:        HttpClient client = new HttpClient();
+c:
+c:        var response = await client.PostAsync(uri, httpContent);
+b:
+p:The other example REST code can be found in the services/mongodb.cs file.
+
 h2:References
+l:[GitHub](https://github.com/mySimonID/XamarinToDoList)
 l:[ToDo List Server](https://github.com/mySimonID/TodoListServer)
 b:
 b:
