@@ -1,0 +1,15 @@
+h2:Overview
+p:The ToDo list runs as an Android implementation, using the ToDo List server (see references)
+p: A REST API is used to access the ToDo List server
+
+rs:
+i1:xamarinToDo001.png
+i3:xamarinToDo001.png, xamarinToDo001.png, xamarinToDo001.png
+re:
+
+h2:References
+l:[ToDo List Server](https://github.com/mySimonID/TodoListServer)
+b:
+b:
+
+

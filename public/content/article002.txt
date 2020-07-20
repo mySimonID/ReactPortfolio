@@ -1,8 +1,8 @@
 l:[github](https://github.com/mySimonID/Calculator)
 l:[demo](https://mysimonid.github.io/Calculator/)
 H2:Overview
-p:This is a simple calculator written using React and demonstrates a number of key concepts in React.
-p: Use of Components, Classes and Functions to create consistent layouts.
+p:This is a simple calculator developed using React and demonstrates a number of key concepts in React.
+p:The use of Components, Classes and Functions to create consistent layouts.
 b:
 i: ReactCalculator.png
 b:

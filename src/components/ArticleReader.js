@@ -90,12 +90,39 @@ class ArticleReader extends React.Component {
       case 'C':
         return (<span className="code" key={key}>{text}</span>)
       case 'I':
+      case 'I1':
         const src = "../img/" + text.trim();
-        return (<img src={src} alt="image" />)
+        return (<div className="row center"><img className="image001" src={src} alt="image" /></div>)
+      case 'I2':
+
+        var src2 = "";
+
+        const images = text.split(",");
+
+        const result = images.map(image => {
+          src2 = "../img/" + image.trim();
+          return (<img className="image002" src={src2} alt="image" />)
+        })
+        console.log(images);
+        return (<div className="row center">{result}</div>)
+
+      case 'I3':
+
+        var src3 = "";
+
+        const images3 = text.split(",");
+
+        const result3 = images3.map(image => {
+          src3 = "../img/" + image.trim();
+          return (<img className="image003" src={src3} alt="image" />)
+        })
+        return (<div className="row center">{result3}</div>)
+
       case 'L':
         const name = this.getLinkName(text);
         const link = this.getLink(text);
         return (<a className="normal-a" rel="noopener noreferrer" target='_blank' href={link}>{name}</a>)
+
       case '*':
         return <span className='bullet'>{text}<br /></span>
       default:

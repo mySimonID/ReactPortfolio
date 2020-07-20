@@ -150,17 +150,19 @@ h1 {
   background-size: cover;
   background-position: 0 50%;
   /* background-position: 0 50%; */
-  width: 100%;
+  width: 95%;
   padding: 8px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 0;
+  margin-left:auto;
+  margin-right: auto;
   /* background: #bfbfbf; */
 }
 
 @media (max-width: 540px) {
   .feature-row {
-    width: 100%;
+    width: 95%;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -432,4 +434,33 @@ footer {
   font-size:18px;
   padding-bottom: 10px;;
   line-height: 1.0em;;
+}
+
+
+/* IMAGE FORMATS */
+
+.image001 {
+  width:50% !important;
+  padding-left:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.image002 {
+  width:50% !important;
+  padding-left:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.image003 {
+  width:30% !important;
+  padding-left:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.center {
+  margin-right:auto;
+  margin-left:auto;
 }
