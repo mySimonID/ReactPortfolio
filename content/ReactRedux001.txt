@@ -1,0 +1,14 @@
+t:React, Redux
+h2:Overview
+p: This project demonstrates the use of React and Redux. The user enters a message in the sender box and it is received, via Redux,in the Receiver box.
+b:
+i:ReactRedux001.png
+b:
+h2:References
+l:[Demo](https://mysimonid.github.io/ReactReduxSenderReceiver/)
+l:[GitHub](https://github.com/mySimonID/ReactReduxSenderReceiver)
+
+
+
+
+
