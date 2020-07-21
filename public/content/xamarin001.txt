@@ -2,11 +2,9 @@ t:Xamarin, REST
 h2:Overview
 p:The ToDo list runs as an Android implementation using the ToDo List server (see references)
 p:A REST API is used to access the ToDo List server(the Server)
-
-rs:
+b:
 i2:xamarinToDo001.png, xamarinToDo002.png
-re:
-
+b:
 h2:Technical
 p:The code uses the HttpClient component to make API calls to the Server.
 p:For example, the following returns all of the ToDo items.

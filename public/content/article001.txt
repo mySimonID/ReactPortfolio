@@ -37,8 +37,8 @@ h2: Future enhancements
 *:Implement authentication
 *:Implement auto-synch
 
-h2: License
-l:[MIT](https://choosealicense.com/licenses/mit/)
+h2:References
+l:[GitHub](https://github.com/mySimonID/TodoListServer)
 b:
 b:
 b:

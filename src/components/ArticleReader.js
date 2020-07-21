@@ -93,7 +93,7 @@ class ArticleReader extends React.Component {
       case 'I':
       case 'I1':
         const src = "../img/" + text.trim();
-        return (<div className="row center"><img className="image001" src={src} alt="image" /></div>)
+        return (<div className="row center"><img className="image001 shadow" src={src} alt="" /></div>)
       case 'I2':
 
         var src2 = "";
@@ -102,7 +102,7 @@ class ArticleReader extends React.Component {
 
         const result = images.map(image => {
           src2 = "../img/" + image.trim();
-          return (<img className="image002" src={src2} alt="image" />)
+          return (<img className="image002 shadow" src={src2} alt="" />)
         })
         console.log(images);
         return (<div className="row center">{result}</div>)
@@ -115,7 +115,7 @@ class ArticleReader extends React.Component {
 
         const result3 = images3.map(image => {
           src3 = "../img/" + image.trim();
-          return (<img className="image003" src={src3} alt="image" />)
+          return (<img className="image003 shadow" src={src3} alt="" />)
         })
         return (<div className="row center">{result3}</div>)
 

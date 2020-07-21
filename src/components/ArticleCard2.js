@@ -10,7 +10,7 @@ function ArticleCard(props) {
       <div className="article-card shadow">
         <Link  to={{ pathname: '/article/' + article.id, article: article }}>
           
-          <div className="card-body">
+          <div className="article-card-body">
             <h3>{article.title}</h3>
             <p className="card-text">{article.detail}</p>
 
