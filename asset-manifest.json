@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReactPortfolio/static/css/main.93d42ed8.chunk.css",
+    "main.css": "/ReactPortfolio/static/css/main.50873f57.chunk.css",
     "main.js": "/ReactPortfolio/static/js/main.cd94f9a8.chunk.js",
     "main.js.map": "/ReactPortfolio/static/js/main.cd94f9a8.chunk.js.map",
     "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.5b3ce1ae.js",
@@ -9,10 +9,10 @@
     "static/js/2.980cdd5d.chunk.js": "/ReactPortfolio/static/js/2.980cdd5d.chunk.js",
     "static/js/2.980cdd5d.chunk.js.map": "/ReactPortfolio/static/js/2.980cdd5d.chunk.js.map",
     "index.html": "/ReactPortfolio/index.html",
-    "precache-manifest.0e9a23b5879cf992fa15c3fdda78ef69.js": "/ReactPortfolio/precache-manifest.0e9a23b5879cf992fa15c3fdda78ef69.js",
+    "precache-manifest.70c6c9d35d2bac45c0b1f5d2691a0242.js": "/ReactPortfolio/precache-manifest.70c6c9d35d2bac45c0b1f5d2691a0242.js",
     "service-worker.js": "/ReactPortfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/ReactPortfolio/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.93d42ed8.chunk.css.map": "/ReactPortfolio/static/css/main.93d42ed8.chunk.css.map",
+    "static/css/main.50873f57.chunk.css.map": "/ReactPortfolio/static/css/main.50873f57.chunk.css.map",
     "static/js/2.980cdd5d.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.980cdd5d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/ReactPortfolio/static/media/HorseGuards.7738baea.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.5b3ce1ae.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.980cdd5d.chunk.js",
-    "static/css/main.93d42ed8.chunk.css",
+    "static/css/main.50873f57.chunk.css",
     "static/js/main.cd94f9a8.chunk.js"
   ]
 }
