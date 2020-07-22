@@ -4,8 +4,9 @@ p:tymr247 is a productive App (Android only) used to track where a person is spe
 p:The app allows a user to create Tasks and accumulate time against those tasks. This is especially useful for when a user flips between different tasks. Tasks can be Grouped and Tagged to help further define the nature of the Task.
 p:The app provides reports (Text and Graphical) to show where time is spent.
 
-i3:Placeholder.png,Placeholder.png,Placeholder.png
-i3:Placeholder.png,Placeholder.png,Placeholder.png
+i3:tymr247-m001.jpg,tymr247-m002a.jpg,tymr247-m002b.jpg
+i3:tymr247-m004.jpg,tymr247-m003.jpg,tymr247-r002.jpg
+i2:tymr247-r003.jpg,tymr247-r004.jpg
 
 h2:References
 *:The source code for this project is currently not available on Github.
