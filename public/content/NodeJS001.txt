@@ -1,4 +1,4 @@
-t:NodeJS, API
+t:Node.js, API
 h2:Overview
 p:A ToDo list written in NodeJS using the ToDo List server (see references)
 b:

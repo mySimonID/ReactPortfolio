@@ -7,7 +7,7 @@ export const skills = [
 ];
 
 export const articles = [
-  { id: '001', skillid:'002', title: 'ToDo List Server', detail: 'A RESTful API ToDo list server using NodeJS/Express', file: 'article001.txt'},
+  { id: '001', skillid:'002', title: 'ToDo List Server', detail: 'A RESTful API ToDo list server using Node.js/ Express', file: 'article001.txt'},
   { id: '002', skillid:'001', title: 'React: Calculator', detail: 'Calculator developed using React', file:'article002.txt'},
   // eslint-disable-next-line no-script-url
   { id: '003', skillid:'999', title: 'Javascript: ToDo List', detail: 'ToDo List using Javascript', file:'JavaScript001.txt' },
@@ -26,7 +26,7 @@ export const experience = [
   { id: '003', title: 'Hobbs', dates: '2014 - 2016', role:'Technical Project Manager',text: 'Managed the deliver of a number of inititives to replace the existing Hobbs eCommerce platform, increasing revenue in the first year. Also, project managed the delivery of a complex CRM lifecycle programme improving both engagement and revenue across all CRM activity. Improved internal processes to ensure correct delivery.' },
   { id: '004', title: 'Data Lateral', dates: '2013 - 2014',  role:'Project Manager', text: 'Delivered Single Customer View(SCV) systems for both Dominoes Pizza and Hobbs.' },
   { id: '005', title: 'dunnhumby UK', dates: '2008-2012',  role:'Project Manager', text: 'Managed a range of projects including process change (Increasing Tesco statements from four per year to six) and development (Project Workbench, a performance reporting tool), infrastructure (Embedding a teams in South America). ' },
-  { id: '006', title: 'TFL', dates: '1994-2008',  role:'Project Manager/Manager/Developer', 
+  { id: '006', title: 'Transport for London (TfL)', dates: '1994-2008',  role:'Project Manager/Manager/Developer', 
                      text: "Owner of several products and managed a team of Developers, Business Analysts and Testers to delivery a number of company wide projects." },
 ];
 

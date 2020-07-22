@@ -6,30 +6,36 @@
   /* box-sizing: inherit; */
 }
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
 
 /* .container {
   background:inherit;
 } */
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   html {
-    font-size: 56.25%;
+    font-size: 70.25%;
   }
-} 
+}  */
 
 body {
   font-family: "Roboto", sans-serif;
   background: #dae3e7;
-  /* font-size: 1.6rem; */
+  font-size: 16px;
   line-height: 1.7;
   color: #545e69;
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 1.3vw;
+  /* font-size: 1.9vw; */
+}
+
+@media (max-width: 740px) {
+  .lead {
+    font-size:0.9em
+  }
 }
 
 a {
@@ -110,21 +116,26 @@ h1 {
 }
 
 .jumbotron {
-  background-image: url("/img/HorseGuards.jpg");
+  background-image: url("img/HorseGuards.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/HorseGuards.jpg");
   background-size: cover;
-  background-position: 0 50%;
+  background-position: 0 35%; 
+
   color: white;
   max-height: 75%;
   margin-bottom: 0;
   /* width: 100%; */
 }
 
+.jumbotron img {
+  opacity: 0;
+}
 .jumbo-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  /* opacity: 0; */
 }
 
 /* FEATURE */
@@ -174,61 +185,11 @@ h1 {
   text-align: center;
 }
 
-/* SKILLS */
-.skills-card {
-  background: transparent;
-  border-radius: 12px;
-  border: 1px solid white;
-  /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
-  font-size: 1.2rem;
-  padding: 8px;
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom: 1.5rem;
-  /* margin: 10px; */
-  /* border-radius: 3px; */
-  /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); */
-  /* box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83), 6px 6px 0 rgba(217,210,200,0.51); */
-  transition: transform .3s;
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
 
-.skills-card:hover {
-  transform: translateY(-1.5rem) scale(1.03)
-}
-
-.skills-card-icon {
-  font-size: 6rem;
-  margin-bottom: 1.5rem;
-  background-image: linear-gradient(to right, #64495E, #4C5F9A);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: hsl(0, 0%, 80%);
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem;
-}
-
-.skills-card * {
-  list-style: none;
-}
-
-.skills-card h3,
-li {
-  color: #fff;
-}
-
-.skills-card h3 {
-  font-weight: 500;
-  text-transform: lowercase;
-}
-
-.skills-card li {
-  font-weight: 300;
+@media (max-width: 540px) {
+  .feature-title h2 {
+    font-size:1.6em
+  }
 }
 
 
@@ -248,11 +209,19 @@ li {
 /* FOOTER */
 footer {
   text-align: left;
+  margin-top:10px;
   padding: 8px;
-  background-color: #ddd;
+  background-color: #008080;
   color: white;
 }
 
+.footerLink a {
+  background: inherit;
+  color: white !important; 
+  text-decoration: none;
+  border: none;
+  margin: 0;
+}
 /* MOBILE */
 
 .mobile-container {
@@ -416,6 +385,12 @@ footer {
   margin-bottom: 20px;
 }
 
+@media (max-width: 540px) {
+  .image001 {
+    width: 100% !important;
+  }
+}
+
 .image002 {
   width: 40% !important;
   padding: 8px;
@@ -445,8 +420,10 @@ footer {
   padding-left: 12px;
   padding-right: 12px;
   margin-right: 8px;
+  margin-bottom:10px;
 }
 
 .tagRow {
-  margin-left: 0
+  margin-left: 0;
+
 }

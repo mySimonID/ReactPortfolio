@@ -1,4 +1,4 @@
-t:NodeJs,Express,REST
+t:Node.js,Express,REST, MongoDB
 h2: Overview
 p:
 p: The server provides a REST interface to manage the database as follows:

@@ -9,6 +9,7 @@ import { skills, experience, education } from './data/Content'
 
 import './App.css';
 import './Article.css'
+import './Skills.css'
 
 function App() {
   return (
@@ -50,7 +51,11 @@ function App() {
       </div>
 
       <section>
-        <div class="feature-row shadow">
+        <div class="feature-row shadow"
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/img/background01.jpg)`,
+          }}
+        >
 
           <div class="feature-container">
             <div class="feature-title">
@@ -75,8 +80,9 @@ function App() {
 
 
       <footer>
-        <p>Author: Simon Joyce</p>
-        <p><a href="mailto:sj@example.com">sj@example.com</a></p>
+        <div className="footerLink">
+          <p>Contact: <a href="mailto:mySimonID@gmail.com">mySimonID@gmail.com</a></p>
+        </div>
       </footer>
     </div>
   );

@@ -1,12 +1,14 @@
 import React from 'react'
 
+import {Link} from 'react-router-dom';
+
 function SkillsCard(props) {
 
   const { skill } = props;
 
   return (
     <div className="col-6 col-md-6 col-lg-3">
-      <a href={`skill/${skill.id}`} alt='skills'>
+      <Link to={`/skill/${skill.id}`} >
         <div className="skills-card">
           <i className="material-icons feature-box_icon">{skill.icon}</i>
           <h3 className="skills-card-heading u-margin-bottom-small">{skill.title}</h3>
@@ -16,7 +18,7 @@ function SkillsCard(props) {
           </ul>
           <p></p>
         </div>
-      </a>
+      </Link>
     </div>
   )
 }
