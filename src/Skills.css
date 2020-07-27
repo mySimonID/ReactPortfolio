@@ -6,13 +6,11 @@
   /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
   font-size: 1.2rem;
   padding: 8px;
-  text-align: center;
+  /* text-align: center; */
+  margin:0;
   margin-top: 8px;
   margin-bottom: 1.5rem;
-  /* margin: 10px; */
-  /* border-radius: 3px; */
-  /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); */
-  /* box-shadow: -6px -6px 26px 0 rgba(255,255,255,0.83), 6px 6px 0 rgba(217,210,200,0.51); */
+  
   transition: transform .3s;
   transition-property: transform;
   transition-duration: 0.3s;

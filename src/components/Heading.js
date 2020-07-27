@@ -7,7 +7,7 @@ const Heading = () => {
   return (
 
     <div className="jumbotron jumbotron-fluid"
-    style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/HorseGuards.jpg)`
+    style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${process.env.PUBLIC_URL}/img/HorseGuards.jpg)`
     // backgroundSize:`cover`, 
     // backgroundPosition:`0 50%`
     }}
