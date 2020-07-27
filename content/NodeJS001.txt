@@ -1,8 +1,8 @@
-t:Node.js, API
+t:Node.js, Axios, API, 
 h2:Overview
 p:A ToDo list written in NodeJS using the ToDo List server (see references)
 b:
-i2:Placeholder.png, Placeholder.png
+i2:NodeJSToDo001.png, NodeJSToDo002.png
 
 h2:References
 l:[GitHub](https://github.com/mySimonID/NodeJSToDoList)
