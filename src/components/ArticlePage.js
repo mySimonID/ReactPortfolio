@@ -38,7 +38,7 @@ class ArticlePage extends Component {
 
           <h1>{this.state.article.title}</h1>
           <p>{this.state.article.detail}</p>
-          <ArticleReader txt={fileName} />
+          <ArticleReader filename={fileName} />
         </div>
 
       </div>

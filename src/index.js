@@ -7,7 +7,7 @@ import './index.css';
 import App from './App';
 import Heading from './components/Heading'
 // import AppNavbar from './components/AppNavbar'
-import ArticlesPage from './components/ArticlePage'
+import ArticlePage from './components/ArticlePage'
 import SkillsPage from './components/SkillPage'
 import * as serviceWorker from './serviceWorker';
 
@@ -19,7 +19,7 @@ ReactDOM.render(
         <Switch >
           <Route exact path='/' component={App} />
           <Route path='/skill/:id' component={SkillsPage} />
-          <Route path='/article/:id' component={ArticlesPage} />
+          <Route path='/article/:id' component={ArticlePage} />
         </Switch>
       </BrowserRouter>
     </HashRouter>

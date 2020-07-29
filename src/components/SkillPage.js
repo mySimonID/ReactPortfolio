@@ -45,9 +45,9 @@ class SkillsPage extends Component {
           <div>
             {this.state.articles.length > 0 ?
               <div className="row">
-                {this.state.articles.map(article => {
+                {this.state.articles.map((article, index) => {
                   return (
-                    <ArticleCard article={article} />
+                    <ArticleCard key={index} article={article} />
                   )
                 })}
               </div>

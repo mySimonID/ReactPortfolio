@@ -7,29 +7,42 @@ class ArticleReader extends React.Component {
     this.state = {
       text: ""
     };
+
+    console.log("ArticleReader-constructor:" + this.props.filename);
   }
+
+  // componentDidMount = () => {
+  //   // this.readTextFile(this.props.txt);
+  // }
 
   componentDidMount = () => {
-    // this.readTextFile(this.props.txt);
+    this.readTextFile(this.props.filename);
   }
 
-  componentWillReceiveProps = (prevState) => {
-    this.readTextFile(prevState.txt);
+  componentDidUpdate = (prevProps) => {
+    console.log("componentDidUpdate: " + this.props.filename);
+
+    if (this.props.filename !== prevProps.filename) {
+      this.readTextFile(this.props.filename);
+    }
   }
 
   readTextFile = file => {
+    console.log("readTextFile: " + file)
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = () => {
       if (rawFile.readyState === 4) {
         if (rawFile.status === 200 || rawFile.status === 0) {
           var allText = rawFile.responseText;
+          console.log("readTextFile(2)-Found)");
           this.setState({
             text: allText
           });
         }
       }
     };
+    console.log("readTextFile(3)-NOTFound)");
     rawFile.send(null);
   };
 
@@ -75,6 +88,8 @@ class ArticleReader extends React.Component {
   }
 
   renderText = (key, prefix, text) => {
+    console.log("renderText:" + prefix);
+
     switch (prefix.toUpperCase()) {
       case 'B': // Blank Row
         return (<div>{'\u00A0'}</div>)
@@ -92,7 +107,10 @@ class ArticleReader extends React.Component {
         return (<span className="code" key={key}>{text}</span>)
       case 'I':
       case 'I1':
-        const src = "../img/" + text.trim();
+
+        const filename = text.trim();
+
+        const src = `${process.env.PUBLIC_URL}/img/${filename}`;
         return (<div className="row center"><img className="image001 shadow" src={src} alt="" /></div>)
       case 'I2':
 
@@ -101,7 +119,9 @@ class ArticleReader extends React.Component {
         const images = text.split(",");
 
         const result = images.map(image => {
-          src2 = "../img/" + image.trim();
+          const filename = image.trim();
+          // src2 = `${window.location.origin}/img/` + image.trim();
+          src2 = `${process.env.PUBLIC_URL}/img/${filename}`;
           return (<img className="image002 shadow" src={src2} alt="" />)
         })
         console.log(images);
@@ -114,7 +134,9 @@ class ArticleReader extends React.Component {
         const images3 = text.split(",");
 
         const result3 = images3.map(image => {
-          src3 = "../img/" + image.trim();
+          const filename = image.trim();
+          //src3 = `${window.location.origin}/img/` + image.trim();
+          src3 = `${process.env.PUBLIC_URL}/img/${filename}`;
           return (<img className="image003 shadow" src={src3} alt="" />)
         })
         return (<div className="row center">{result3}</div>)
@@ -133,6 +155,10 @@ class ArticleReader extends React.Component {
   }
 
   render() {
+    //console.log("ArticleReader - render" + this.state.filename);
+
+
+
 
     var prefix = "";
     var text = "";

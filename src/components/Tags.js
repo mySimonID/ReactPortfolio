@@ -7,9 +7,9 @@ function tags(props) {
 
   return (
     <div className="row tagRow">
-      {tagList.split(',').map(tag => {
+      {tagList.split(',').map((tag, index) => {
         return(
-          <div><TagItem tag={tag} /></div>
+          <TagItem tag={tag} key={index} />
         )
       })}
     </div>

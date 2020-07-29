@@ -25,7 +25,7 @@ export const experience = [
   { id: '002', title: 'TFL', dates: '2016 - 2020', role:'Trainer',text: 'Delivered training and support for station staff in the use of new mobile Applications.' },
   { id: '003', title: 'Hobbs', dates: '2014 - 2016', role:'Technical Project Manager',text: 'Managed the deliver of a number of initiatives to replace the existing Hobbs eCommerce platform, increasing revenue in the first year. Also, project managed the delivery of a complex CRM lifecycle programme improving both engagement and revenue across all CRM activity. Improved internal processes to ensure correct delivery.' },
   { id: '004', title: 'Data Lateral', dates: '2013 - 2014',  role:'Project Manager', text: 'Delivered Single Customer View(SCV) systems for both Dominoes Pizza and Hobbs.' },
-  { id: '005', title: 'dunnhumby UK', dates: '2008-2012',  role:'Project Manager', text: 'Managed a range of projects including process change (Increasing Tesco statements from four per year to six) and development (Project Workbench, a performance reporting tool), infrastructure (Embedding a teams in South America). ' },
+  { id: '005', title: 'dunnhumby UK', dates: '2008-2012',  role:'Project Manager', text: 'Managed a range of projects including process change (Increasing Tesco statements from four per year to six) and development (Project Workbench, a performance reporting tool), infrastructure (Embedding teams in South America). ' },
   { id: '006', title: 'Transport for London (TfL)', dates: '1994-2008',  role:'Project Manager/Manager/Developer', 
                      text: "Owner of several products and managed a team of Developers, Business Analysts and Testers to delivery a number of company wide projects." },
 ];
@@ -41,6 +41,7 @@ export const education = [
 export const getArticle = (id) => {
 
   const record = articles.find(article => article.id === id);
+  console.log("getArticle: " + record.file);
   return record
 }
 

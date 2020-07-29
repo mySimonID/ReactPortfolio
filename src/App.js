@@ -4,6 +4,7 @@ import React from 'react';
 import SkillsCard from './components/SkillsCard'
 import ExperienceCard from './components/ExperienceCard'
 import EducationCard from './components/EducationCard'
+import CurrentProjectsPage from './components/CurrentProjectsPage'
 
 import { skills, experience, education } from './data/Content'
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
 
+      {/* ABOUT ME */}
       <div className="aboutme shadow">
         <h1>About Me</h1>
         <p>I am an experienced Business and Technical Project Manager with over 20 years of experience in a number of industries delivering a range of
@@ -38,37 +40,48 @@ function App() {
       </div>
 
 
+      {/* EDUCATION */}
       <div className="aboutme shadow">
         <h1>Education</h1>
         {
-          education.map(exp => <EducationCard exp={exp} />)
+          education.map(exp => <EducationCard key={exp.id} exp={exp} />)
         }
       </div>
 
+      {/* EXPERIENCE */}
       <div className="aboutme shadow">
         <h1>Work Experience</h1>
         {
-          experience.map(exp => <ExperienceCard exp={exp} />)
+          experience.map(exp => <ExperienceCard key={exp.id} exp={exp} />)
         }
       </div>
 
+      {/* CURRENT PROJECTS */}
       <section>
-        <div class="feature-row shadow"
+        <div className="aboutme shadow">
+          <h1>Active Projects</h1>
+          <CurrentProjectsPage filename={'./content/issueJ001.txt'} />
+        </div>
+      </section>
+
+      {/* PROJECT PORTFOLIO */}
+      <section>
+        <div className="feature-row shadow"
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL}/img/background01.jpg)`,
           }}
         >
 
-          <div class="feature-container">
-            <div class="feature-title">
+          <div className="feature-container">
+            <div className="feature-title">
 
               <h2>Example Projects</h2>
             </div>
 
-            <div class="row">
+            <div className="row">
               {skills.map(skill => {
                 return (
-                  <SkillsCard skill={skill} />
+                  <SkillsCard key={skill.id} skill={skill} />
                 )
               })
               }
