@@ -1,0 +1,34 @@
+
+
+.underline {
+  text-decoration: underline;
+}
+
+.article-link {
+  color:  rgb(140, 140, 236);;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 10px;;
+}
+
+/* TAGS */
+.tag {
+  background: rgb(140, 140, 236);
+  color: white;
+  font-size:0.8em;
+  text-transform: lowercase;
+  font-weight: 400;
+  border-radius: 20px;
+  padding-top:4px;
+  padding-bottom: 4px;;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right: 8px;
+  margin-bottom:12px;
+}
+
+.tagRow {
+  margin-left: 0;
+}

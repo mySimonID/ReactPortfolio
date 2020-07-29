@@ -60,7 +60,8 @@ function App() {
       <section>
         <div className="aboutme shadow">
           <h1>Active Projects</h1>
-          <CurrentProjectsPage filename={'./content/issueJ001.txt'} />
+          <CurrentProjectsPage filename={`${process.env.PUBLIC_URL}/content/issueJ001.txt`} />
+          
         </div>
       </section>
 

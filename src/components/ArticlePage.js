@@ -28,7 +28,7 @@ class ArticlePage extends Component {
     console.log(">>>" + this.state.article.file );
     var fileName = this.state.article.file ? this.state.article.file : "unknown.txt"
 
-    fileName = "../content/" + fileName;
+    fileName = `${process.env.PUBLIC_URL}/content/${fileName}`;
     console.log(fileName);
 
     return (

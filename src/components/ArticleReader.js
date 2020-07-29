@@ -1,5 +1,8 @@
 import React from 'react'
 import Tags from './Tags'
+import {Link} from 'react-router-dom'
+
+import '../ArticleReader.css'
 
 class ArticleReader extends React.Component {
   constructor(props) {
@@ -91,6 +94,8 @@ class ArticleReader extends React.Component {
     console.log("renderText:" + prefix);
 
     switch (prefix.toUpperCase()) {
+      case 'A':
+        return(<div><Link className="article-link underline" to={`article/${text}`}>Link to main article</Link></div>);
       case 'B': // Blank Row
         return (<div>{'\u00A0'}</div>)
       case 'NF':
@@ -99,8 +104,14 @@ class ArticleReader extends React.Component {
         return (<h1 key={key}>{text}</h1>)
       case 'H2':
         return (<h2 key={key}>{text}</h2>)
+      case 'H2U':
+        return (<h2 className="underline" key={key}>{text}</h2>)
       case 'H3':
         return (<h3 key={key}>{text}</h3>)
+      case 'H3U':
+        return (<h3 className="underline" key={key}>{text}</h3>)
+      case 'HL':
+        return (<div className="horizontal-line"></div>)
       case 'P':
         return (<p key={key}>{text}</p>)
       case 'C':
@@ -109,7 +120,6 @@ class ArticleReader extends React.Component {
       case 'I1':
 
         const filename = text.trim();
-
         const src = `${process.env.PUBLIC_URL}/img/${filename}`;
         return (<div className="row center"><img className="image001 shadow" src={src} alt="" /></div>)
       case 'I2':
@@ -120,7 +130,6 @@ class ArticleReader extends React.Component {
 
         const result = images.map(image => {
           const filename = image.trim();
-          // src2 = `${window.location.origin}/img/` + image.trim();
           src2 = `${process.env.PUBLIC_URL}/img/${filename}`;
           return (<img className="image002 shadow" src={src2} alt="" />)
         })
@@ -135,7 +144,6 @@ class ArticleReader extends React.Component {
 
         const result3 = images3.map(image => {
           const filename = image.trim();
-          //src3 = `${window.location.origin}/img/` + image.trim();
           src3 = `${process.env.PUBLIC_URL}/img/${filename}`;
           return (<img className="image003 shadow" src={src3} alt="" />)
         })

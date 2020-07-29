@@ -419,18 +419,3 @@ footer {
   margin-left: auto;
 }
 
-.tag {
-  background: rgb(140, 140, 236);
-  color: white;
-  font-weight: 500;
-  border-radius: 50px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-right: 8px;
-  margin-bottom:10px;
-}
-
-.tagRow {
-  margin-left: 0;
-
-}

@@ -17,6 +17,8 @@ export const articles = [
   { id: '007', skillid:'004', title: 'React Native: ToDoList client', detail: 'Example of a ToDo list developed using React Native', file:'ReactNative001.txt'},
   { id: '008', skillid:'004', title: 'Xamarin: tymr247', detail: 'A productivity App (Android) developed using Xamarin', file:'xamarin002.txt'},
   { id: '009', skillid:'001', title: 'React/Redux: Sender-Receiver', detail: 'Example of using React / Redux', file:'ReactRedux001.txt'},
+  { id: '101', skillid:'001', title: 'IssueJ', detail: 'An issue manager similar to JIRA', file:'IssueJ002.txt'},
+
 ];
 
 
