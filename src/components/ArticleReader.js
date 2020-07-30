@@ -128,7 +128,6 @@ class ArticleReader extends React.Component {
         const src = `${process.env.PUBLIC_URL}/img/${filename}`;
         return (<div className="row center">
           <ImageView css={"image001 shadow"} src={src} />
-       
         </div>)
       case 'I2':
 
@@ -140,9 +139,7 @@ class ArticleReader extends React.Component {
           const filename = image.trim();
           src2 = `${process.env.PUBLIC_URL}/img/${filename}`;
           return(<ImageView css={"image002 shadow"} src={src2} />);
-          // return (<img className="image002 shadow" src={src2} alt="" />)
         })
-        // console.log(images);
         return (<div className="row center">{result}</div>)
 
       case 'I3':
@@ -155,7 +152,6 @@ class ArticleReader extends React.Component {
           const filename = image.trim();
           src3 = `${process.env.PUBLIC_URL}/img/${filename}`;
           return(<ImageView css={"image003 shadow"} src={src3} />);
-          // return (<img className="image003 shadow" src={src3} alt="" />)
         })
         return (<div className="row center">{result3}</div>)
 
