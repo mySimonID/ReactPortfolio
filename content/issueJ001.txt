@@ -1,7 +1,7 @@
 
 h3u:IssueJ
 p:An issue manager similar to JIRA
-t:React.js, MongoDB, Materialize, REST API
+t:React.js, MongoDB, Materialize, REST API, responsive design
 p:Status: InProgress
 a:101
 b:
@@ -11,7 +11,9 @@ h4:Objectives
 *:To develop knowledge of the use of mongoDB/cloud databases
 *:To develop knowledge of the use of Authentication
 *:To develop knowledge of the data concurrency in cloud databases
-*:To professionally document IssueJ 
+*:To develop understanding on the use of materialize
+*:To document IssueJ using wireframes, ERDs and user stories 
+*:To make IssueJ responsive
 b:
 
 hl:
