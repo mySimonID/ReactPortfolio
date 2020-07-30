@@ -48,6 +48,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 540px) {
@@ -62,6 +63,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .image003 {
@@ -70,6 +72,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 
