@@ -1,4 +1,4 @@
-t:React.js, MongoDB, Materialize, REST API
+t:React.js, MongoDB, Materialize, REST API, responsive design
 p:Status: InProgress
 h4:Objectives
 *:To create a JIRA like application - IssueJ
@@ -6,16 +6,23 @@ h4:Objectives
 *:To develop knowledge of the use of mongoDB/cloud databases
 *:To develop knowledge of the use of Authentication
 *:To develop knowledge of the data concurrency in cloud databases
-*:To professionally document IssueJ 
+*:To develop understanding on the use of materialize
+*:To document IssueJ using wireframes, ERDs and user stories 
+*:To make IssueJ responsive
 b:
 
 h4:Progress to date
 *:Initial wireframes for Projects/Issues completed
 *:MongoDB create and set-up for Projects/Issues
-*:IssueJ-DatabaseServer (REST API Interface) - setup comopleted
-*:Project/Issues pages and basic CRUD operations created.
+*:IssueJ-DatabaseServer (REST API Interface) - setup completed
+*:Project/Issues pages and basic CRUD operations created (prototype).
 b:
 i2:IssueJ001.png, IssueJ002.png
 i2:IssueJ003.png, IssueJ004.png
+b:
+h4:Next steps
+*:Design in Team and user journeys
+*:Implement Authentication
+*:
 
 
