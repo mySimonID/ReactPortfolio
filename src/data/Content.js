@@ -23,13 +23,13 @@ export const articles = [
 
 
 export const experience = [
-  { id: '001', title: 'MSXi - Jaguar Landrover', role:'Project Manager', dates: '2017 - 2020', text: 'Project manager for the replacement of the Global Retailer Portal (GRP). Working with 3rd party suppliers and internal departments, using Agile, to deliver a cloud based global system based on Liferay. In addition, I managed a number of upgrades/fixes on the existing systems. ' },
+  { id: '001', title: 'MSXi - Jaguar Landrover', role:'Project Manager', dates: '2017 - 2020', text: 'Project manager for the replacement of the Global Retailer Portal (GRP). Working with 3rd party suppliers and internal departments, using Agile, to deliver a cloud based global system based on Liferay. In addition, I managed a number of upgrades/fixes on the existing systems.' },
   { id: '002', title: 'TFL', dates: '2016 - 2020', role:'Trainer',text: 'Delivered training and support for station staff in the use of new mobile Applications.' },
-  { id: '003', title: 'Hobbs', dates: '2014 - 2016', role:'Technical Project Manager',text: 'Managed the deliver of a number of initiatives to replace the existing Hobbs eCommerce platform, increasing revenue in the first year. Also, project managed the delivery of a complex CRM lifecycle programme improving both engagement and revenue across all CRM activity. Improved internal processes to ensure correct delivery.' },
+  { id: '003', title: 'Hobbs', dates: '2014 - 2016', role:'Technical Project Manager',text: 'Managed the delivery of a number of initiatives to replace the existing Hobbs eCommerce platform, which increased revenue in the first year. Also, project managed the delivery of a complex CRM lifecycle programme improving both engagement and revenue across all CRM activity. Improved internal processes to ensure accurate delivery.' },
   { id: '004', title: 'Data Lateral', dates: '2013 - 2014',  role:'Project Manager', text: 'Delivered Single Customer View(SCV) systems for both Dominoes Pizza and Hobbs.' },
-  { id: '005', title: 'dunnhumby UK', dates: '2008-2012',  role:'Project Manager', text: 'Managed a range of projects including process change (Increasing Tesco statements from four per year to six) and development (Project Workbench, a performance reporting tool), infrastructure (Embedding teams in South America). ' },
+  { id: '005', title: 'dunnhumby UK', dates: '2008-2012',  role:'Project Manager', text: 'Managed a range of projects including process change (Increasing Tesco statements from four per year to six) and development (Project Workbench, a performance reporting tool), infrastructure (Embedding teams in South America).' },
   { id: '006', title: 'Transport for London (TfL)', dates: '1994-2008',  role:'Project Manager/Manager/Developer', 
-                     text: "Owner of several products and managed a team of Developers, Business Analysts and Testers to delivery a number of company wide projects." },
+                     text: "Owner of several products and manager of a team of Developers, Business Analysts and Testers to deliver a number of company wide projects." },
 ];
 
 export const education = [
@@ -43,7 +43,7 @@ export const education = [
 export const getArticle = (id) => {
 
   const record = articles.find(article => article.id === id);
-  console.log("getArticle: " + record.file);
+  // console.log("getArticle: " + record.file);
   return record
 }
 

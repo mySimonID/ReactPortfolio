@@ -42,6 +42,15 @@
   margin-bottom: 10px;
 }
 
+
+.article-page h4 {
+  /* color: #777; */
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .article-page p {
   color: #777;
   font-weight: 300;

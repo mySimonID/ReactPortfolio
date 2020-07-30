@@ -18,12 +18,8 @@ class CurrentProjectsPage extends Component {
   render() {
 
     return (
-      <div>
-
-      
-          <ArticleReader filename={this.props.filename} />
-    
-
+      <div className="article">
+        <ArticleReader filename={this.props.filename} />
       </div>
     )
   }

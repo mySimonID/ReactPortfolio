@@ -25,16 +25,16 @@ class ArticlePage extends Component {
 
   render() {
 
-    console.log(">>>" + this.state.article.file );
+    // console.log(">>>" + this.state.article.file );
     var fileName = this.state.article.file ? this.state.article.file : "unknown.txt"
 
     fileName = `${process.env.PUBLIC_URL}/content/${fileName}`;
-    console.log(fileName);
+    // console.log(fileName);
 
     return (
       <div className="col-12 col-sm-12 col-lg-12">
 
-        <div className="article-page">
+        <div className="article-page article">
 
           <h1>{this.state.article.title}</h1>
           <p>{this.state.article.detail}</p>

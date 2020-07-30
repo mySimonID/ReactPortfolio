@@ -51,7 +51,7 @@ class SkillsPage extends Component {
                   )
                 })}
               </div>
-              : <div>There are not articles</div>
+              : <div>There are no articles documented yet</div>
             }
           </div>
         </div>

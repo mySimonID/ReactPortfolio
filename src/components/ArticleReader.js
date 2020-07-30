@@ -1,6 +1,7 @@
 import React from 'react'
 import Tags from './Tags'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import ImageView from './ImageView'
 
 import '../ArticleReader.css'
 
@@ -11,7 +12,7 @@ class ArticleReader extends React.Component {
       text: ""
     };
 
-    console.log("ArticleReader-constructor:" + this.props.filename);
+    // console.log("ArticleReader-constructor:" + this.props.filename);
   }
 
   // componentDidMount = () => {
@@ -23,7 +24,7 @@ class ArticleReader extends React.Component {
   }
 
   componentDidUpdate = (prevProps) => {
-    console.log("componentDidUpdate: " + this.props.filename);
+    // console.log("componentDidUpdate: " + this.props.filename);
 
     if (this.props.filename !== prevProps.filename) {
       this.readTextFile(this.props.filename);
@@ -31,21 +32,21 @@ class ArticleReader extends React.Component {
   }
 
   readTextFile = file => {
-    console.log("readTextFile: " + file)
+    // console.log("readTextFile: " + file)
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
     rawFile.onreadystatechange = () => {
       if (rawFile.readyState === 4) {
         if (rawFile.status === 200 || rawFile.status === 0) {
           var allText = rawFile.responseText;
-          console.log("readTextFile(2)-Found)");
+          // console.log("readTextFile(2)-Found)");
           this.setState({
             text: allText
           });
         }
       }
     };
-    console.log("readTextFile(3)-NOTFound)");
+    // console.log("readTextFile(3)-NOTFound)");
     rawFile.send(null);
   };
 
@@ -91,11 +92,11 @@ class ArticleReader extends React.Component {
   }
 
   renderText = (key, prefix, text) => {
-    console.log("renderText:" + prefix);
+    // console.log("renderText:" + prefix);
 
     switch (prefix.toUpperCase()) {
       case 'A':
-        return(<div><Link className="article-link underline" to={`article/${text}`}>Link to main article</Link></div>);
+        return (<div><Link className="article-link underline" to={`article/${text}`}>Link to main article</Link></div>);
       case 'B': // Blank Row
         return (<div>{'\u00A0'}</div>)
       case 'NF':
@@ -110,6 +111,10 @@ class ArticleReader extends React.Component {
         return (<h3 key={key}>{text}</h3>)
       case 'H3U':
         return (<h3 className="underline" key={key}>{text}</h3>)
+      case 'H4':
+        return (<h4 key={key}>{text}</h4>)
+      case 'H4U':
+        return (<h4 className="underline" key={key}>{text}</h4>)
       case 'HL':
         return (<div className="horizontal-line"></div>)
       case 'P':
@@ -121,7 +126,10 @@ class ArticleReader extends React.Component {
 
         const filename = text.trim();
         const src = `${process.env.PUBLIC_URL}/img/${filename}`;
-        return (<div className="row center"><img className="image001 shadow" src={src} alt="" /></div>)
+        return (<div className="row center">
+          <ImageView css={"image001 shadow"} src={src} />
+       
+        </div>)
       case 'I2':
 
         var src2 = "";
@@ -131,9 +139,10 @@ class ArticleReader extends React.Component {
         const result = images.map(image => {
           const filename = image.trim();
           src2 = `${process.env.PUBLIC_URL}/img/${filename}`;
-          return (<img className="image002 shadow" src={src2} alt="" />)
+          return(<ImageView css={"image002 shadow"} src={src2} />);
+          // return (<img className="image002 shadow" src={src2} alt="" />)
         })
-        console.log(images);
+        // console.log(images);
         return (<div className="row center">{result}</div>)
 
       case 'I3':
@@ -145,7 +154,8 @@ class ArticleReader extends React.Component {
         const result3 = images3.map(image => {
           const filename = image.trim();
           src3 = `${process.env.PUBLIC_URL}/img/${filename}`;
-          return (<img className="image003 shadow" src={src3} alt="" />)
+          return(<ImageView css={"image003 shadow"} src={src3} />);
+          // return (<img className="image003 shadow" src={src3} alt="" />)
         })
         return (<div className="row center">{result3}</div>)
 
@@ -164,15 +174,11 @@ class ArticleReader extends React.Component {
 
   render() {
     //console.log("ArticleReader - render" + this.state.filename);
-
-
-
-
     var prefix = "";
     var text = "";
 
     return (
-      <div>
+      <div className="article">
         {this.state.text.split("\n").map((item, key) => {
 
           prefix = this.getPrefix(item);

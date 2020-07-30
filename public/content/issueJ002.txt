@@ -1,9 +1,5 @@
-
-h3u:IssueJ
-p:An issue manager similar to JIRA
-t:React.js, MongoDB, Bootstrap
+t:React.js, MongoDB, Materialize, REST API
 p:Status: InProgress
-b:
 h4:Objectives
 *:To create a JIRA like application - IssueJ
 *:To use React.js & mongoDB to build IssueJ

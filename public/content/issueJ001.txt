@@ -1,7 +1,7 @@
 
 h3u:IssueJ
 p:An issue manager similar to JIRA
-t:React.js, MongoDB, Bootstrap
+t:React.js, MongoDB, Materialize, REST API
 p:Status: InProgress
 a:101
 b:

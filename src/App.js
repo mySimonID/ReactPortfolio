@@ -21,57 +21,40 @@ function App() {
       {/* ABOUT ME */}
       <div className="aboutme shadow">
         <h1>About Me</h1>
-        <p>I am an experienced Business and Technical Project Manager with over 20 years of experience in a number of industries delivering a range of
+        <p>I am an experienced Business and Technical Project Manager with over 20 years of experience in a variety of industries delivering a range of
         different infrastructure, process and software projects using both Waterfall and Agile methods.
         </p>
         <p>Using a flexible approach to my work, I have on occasion filled the roles of Business Analyst, Tester and Developer.</p>
         <p>KPI's:</p>
         <ul>
-          <li>Successful delivery of projects involved on time and budget.</li>
-          <li>Managed requirements to ensure correct project delivery.</li>
-          <li>Performed system analysis to aid with understanding and system testing.</li>
-          <li>Lead, mentored, monitored and managed multi-disciplined teams through different phases of projects.</li>
-          <li>Suggested the best course of action to management on project delivery.</li>
-          <li>Innovated a number of solutions, including RPA.</li>
+          <li>Successful delivery of a number of projects on time and within budget.</li>
+          <li>Managed requirements to ensure accurate project delivery.</li>
+          <li>Performed system analysis to aid understanding and system testing.</li>
+          <li>Managed multi-disciplined teams, through different phases of projects.</li>
+          <li>Offered solutions to management on the best approach for project delivery.</li>
+          <li>Able to prioritise and manage several complex projects at one time.</li>
+          <li>Able to successfully coordinate third party providers to deliver solutions.</li>
+          <li>Innovated a number of solutions, e.g using RPA to deploy users globally.</li>
         </ul>
 
-        <p>Originally from a developer background, I maintain a firm interest in software development and I continue to develop a number software projects (see below).</p>
+        <p>Originally from a developer background, I maintain a firm interest in software 
+              development and I continue to develop a number of software projects (see below).</p>
         <p><b>Industries:</b> Transport, Engineering, Data Insight, Agency, Retail and Automotive.</p>
       </div>
 
-
-      {/* EDUCATION */}
-      <div className="aboutme shadow">
-        <h1>Education</h1>
-        {
-          education.map(exp => <EducationCard key={exp.id} exp={exp} />)
-        }
-      </div>
-
-      {/* EXPERIENCE */}
-      <div className="aboutme shadow">
-        <h1>Work Experience</h1>
-        {
-          experience.map(exp => <ExperienceCard key={exp.id} exp={exp} />)
-        }
-      </div>
 
       {/* CURRENT PROJECTS */}
       <section>
         <div className="aboutme shadow">
           <h1>Active Projects</h1>
           <CurrentProjectsPage filename={`${process.env.PUBLIC_URL}/content/issueJ001.txt`} />
-          
+
         </div>
       </section>
 
       {/* PROJECT PORTFOLIO */}
       <section>
-        <div className="feature-row shadow"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/img/background01.jpg)`,
-          }}
-        >
+        <div className="feature-row shadow">
 
           <div className="feature-container">
             <div className="feature-title">
@@ -93,6 +76,30 @@ function App() {
       </section>
 
 
+      {/* EXPERIENCE */}
+      <div className="aboutme shadow">
+        <h1>Work Experience</h1>
+        {
+          experience.map(exp => <ExperienceCard key={exp.id} exp={exp} />)
+        }
+      </div>
+
+      {/* EDUCATION */}
+      <div className="aboutme shadow">
+
+        <h1>Skills & Education</h1>
+        <div className="skills-section">
+          <p><b>Skills:</b> Project Management, Business Analysis, Programming, Testing/UAT, Innovation</p>
+          <p><b>Software:</b> MS Office, MS Project, JIRA/Confluence, Visual Studio/Code</p>
+          <p><b>Development:</b> Excel VBA, MS Project VBA, SQL, HTML, CSS, Javascript, React, Xamarin, C#, RPA</p>
+        </div>
+        <br />
+        <div className="skills-section">
+          {
+            education.map(exp => <EducationCard key={exp.id} exp={exp} />)
+          }
+        </div>
+      </div>
 
 
       <footer>
