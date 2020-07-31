@@ -95,9 +95,11 @@ function App() {
         </div>
         <br />
         <div className="skills-section">
+        <ul>
           {
-            education.map(exp => <EducationCard key={exp.id} exp={exp} />)
+            education.map(exp => {return(<li><EducationCard key={exp.id} exp={exp} /></li>)})
           }
+          </ul>
         </div>
       </div>
 
