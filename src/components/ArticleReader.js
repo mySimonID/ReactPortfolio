@@ -11,20 +11,13 @@ class ArticleReader extends React.Component {
     this.state = {
       text: ""
     };
-
-    // console.log("ArticleReader-constructor:" + this.props.filename);
   }
-
-  // componentDidMount = () => {
-  //   // this.readTextFile(this.props.txt);
-  // }
 
   componentDidMount = () => {
     this.readTextFile(this.props.filename);
   }
 
   componentDidUpdate = (prevProps) => {
-    // console.log("componentDidUpdate: " + this.props.filename);
 
     if (this.props.filename !== prevProps.filename) {
       this.readTextFile(this.props.filename);
@@ -39,14 +32,14 @@ class ArticleReader extends React.Component {
       if (rawFile.readyState === 4) {
         if (rawFile.status === 200 || rawFile.status === 0) {
           var allText = rawFile.responseText;
-          // console.log("readTextFile(2)-Found)");
+  
           this.setState({
             text: allText
           });
         }
       }
     };
-    // console.log("readTextFile(3)-NOTFound)");
+    
     rawFile.send(null);
   };
 
@@ -154,7 +147,19 @@ class ArticleReader extends React.Component {
           return(<ImageView css={"image003 shadow"} src={src3} />);
         })
         return (<div className="row center">{result3}</div>)
+        case 'I4':
 
+          var src4 = "";
+  
+          const images4 = text.split(",");
+  
+          const result4 = images4.map(image => {
+            const filename = image.trim();
+            src3 = `${process.env.PUBLIC_URL}/img/${filename}`;
+            return(<ImageView css={"image004 shadow"} src={src4} />);
+          })
+          return (<div className="row center">{result4}</div>)
+  
       case 'L':
         const name = this.getLinkName(text);
         const link = this.getLink(text);
