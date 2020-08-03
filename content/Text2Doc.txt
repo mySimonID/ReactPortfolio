@@ -1,0 +1,37 @@
+t:React.js, bootstrap, responsive
+h2:Overview
+p:Text2Doc allows you to quickely build content pages. The articles in this portfolio (including this page) have been built using this react.js code.
+p:A txt input file is used to specify the content and what the output will look like once it is rendered. 
+p:You are able to specify headers, text, images, lists and links.
+p:If you want to change the styles of the different elements, then make changes to the CSS in the Text2Doc.css file
+b:
+p:For example:
+
+i2:Text2Doc001.png, Text2Doc002.png
+
+p:The image on the left is the source txt input file and the image on the right is the result.
+
+h2:Usage
+p:The following commands are available:
+*:h1:, h2:, h3:, h4: - different styles of header
+*:h1u:, h2u:, h3u:, h4u: - as above but undelined
+*:hl: - Horizontal line
+*:p: - Text row
+*:b: - Blank row
+*:i: - Single images (i.e. i:image1.png)
+*:i2: - Two images side by side (i.e. i2:image.png, image2.png)
+*:i3: - Three images side by side (i.e. i2:image.png, image2.png, image3.png)
+*:i4: - Three images side by side (i.e. i2:image.png, image2.png, image3.png, image4.png)
+*:L: - Text and Link to a page. (i.e. [portfolio](http://localhost:3000/Portfolio))
+*:t: - tage list (i.e. t: react.js, html, css)
+
+
+
+h2:Configuration
+p:Content txt files are held in the public\content folder
+p:Images are held in an public\img folder
+
+h2:References
+l:[GitHub](https://github.com/mySimonID/Text2Doc)
+l:[demo](https://mysimonid.github.io/Text2Doc/)
+
