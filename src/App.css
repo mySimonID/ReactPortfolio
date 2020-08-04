@@ -177,6 +177,10 @@ h1 {
   }
 }
 
+.feature-title {
+  margin-bottom:35px;
+}
+
 .feature-title h2 {
   /* color: white; */
   font-weight: 300;

@@ -59,7 +59,7 @@ function App() {
           <div className="feature-container">
             <div className="feature-title">
 
-              <h2>Example Projects</h2>
+              <h1>Example Projects</h1>
             </div>
 
             <div className="row">
