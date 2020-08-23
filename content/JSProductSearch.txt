@@ -1,0 +1,15 @@
+t:javascript, html, css 
+h2:Overview
+p:This project demonstrates searching/filtering products on a page using Javascript.
+p:There are three elements to the search/filter:
+*:Text search
+*:Option filter (All products vs only products in stock)
+*:Multiple filter (filtering on one or more colours)
+br:
+
+
+i:JSProductSearch001.png
+
+h2:References
+l:[GitHub](https://github.com/mySimonID/ProductSearch)
+
