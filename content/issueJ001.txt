@@ -15,7 +15,8 @@ h4:Objectives
 *:To document IssueJ using wireframes, ERDs and user stories 
 *:To make IssueJ responsive
 b:
-
 hl:
+i:IssueJ-H001.png
+
 
 
