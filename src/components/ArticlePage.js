@@ -34,7 +34,7 @@ class ArticlePage extends Component {
     return (
       <div className="col-12 col-sm-12 col-lg-12">
 
-        <div className="article-page article">
+        <div className="article-page article shadow">
 
           <h1>{this.state.article.title}</h1>
           <p>{this.state.article.detail}</p>

@@ -38,7 +38,7 @@ class SkillsPage extends Component {
     return (
       <div className="col-12 col-sm-12 col-lg-12">
 
-        <div className="article-page">
+        <div className="article-page shadow">
 
           <h1>{this.state.skill.title} projects</h1>
       

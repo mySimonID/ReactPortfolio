@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import Heading from './components/Heading'
 // import AppNavbar from './components/AppNavbar'
+
 import ArticlePage from './components/ArticlePage'
 import SkillsPage from './components/SkillPage'
 import * as serviceWorker from './serviceWorker';

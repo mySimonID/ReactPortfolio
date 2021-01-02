@@ -18,6 +18,8 @@ export const articles = [
   { id: '008', skillid:'004', title: 'Xamarin: tymr247', detail: 'A productivity App (Android) developed using Xamarin.', file:'xamarin002.txt'},
   { id: '009', skillid:'001', title: 'React/Redux: Sender-Receiver', detail: 'Example of using React / Redux.', file:'ReactRedux001.txt'},
   { id: '010', skillid:'001', title: 'Text2Doc', detail: 'React.js component to processes a txt file and creates a formatted web page.', file:'Text2Doc.txt'},
+   // eslint-disable-next-line no-script-url
+  { id: '011', skillid:'001', title: 'Javascript: Product Search/Filter', detail: 'Search/Filter on a simple Product list using Javascript', file:'JSProductSearch.txt'},
   { id: '101', skillid:'001', title: 'IssueJ', detail: 'An issue manager similar to JIRA', file:'issueJ002.txt'},
 
 ];
